@@ -1,0 +1,57 @@
+{
+  "0": {
+    "basicblocks": 11,
+    "calls": "2 2 1",
+    "control_depth": 3,
+    "def_use_depth": 3,
+    "file": "counter_top.cpp",
+    "fileloc": 49,
+    "instructions": 35,
+    "loads": {
+      "G": 5
+    },
+    "memory_accesses": 15,
+    "name": "counter_module",
+    "stores": {
+      "G": 6,
+      "T": 1
+    },
+    "total_instructions": 74
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "counter_top.cpp",
+    "fileloc": 39,
+    "instructions": 5,
+    "loads": {
+      "G": 1
+    },
+    "memory_accesses": 0,
+    "name": "is_rising_edge",
+    "stores": {
+      "G": 1
+    },
+    "total_instructions": 5
+  },
+  "2": {
+    "basicblocks": 5,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "counter_top.cpp",
+    "fileloc": 18,
+    "instructions": 17,
+    "loads": {
+      "L": 2
+    },
+    "memory_accesses": 0,
+    "name": "run",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 17
+  }
+}

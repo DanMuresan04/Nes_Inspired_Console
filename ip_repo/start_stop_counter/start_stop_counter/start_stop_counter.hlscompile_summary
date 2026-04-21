@@ -1,0 +1,245 @@
+<ENTRY>
+{
+ "thisFile": "/home/dan/HLS/IP_REPOSITORY/start_stop_counter/start_stop_counter/start_stop_counter.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Wed Mar 11 10:28:08 2026",
+ "timestampMillis": "1773217688285",
+ "buildStep": {
+  "cmdId": "fd4a7bdb-09e2-42a5-8d58-48e6bb17dd69",
+  "name": "v++",
+  "logFile": "/home/dan/HLS/IP_REPOSITORY/start_stop_counter/start_stop_counter/logs/start_stop_counter.steps.log",
+  "commandLine": "/home/dan/Vivado/2025.2/Vitis/bin/unwrapped/lnx64.o/v++  -c --mode hls --config /home/dan/HLS/IP_REPOSITORY/start_stop_counter/hls_config.cfg --work_dir start_stop_counter ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "/home/dan/HLS/IP_REPOSITORY/start_stop_counter/hls_config.cfg",
+   "--work_dir",
+   "start_stop_counter"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/dan/HLS/IP_REPOSITORY/start_stop_counter/hls_config.cfg",
+    "content": "part=xc7a100tcsg324-1\n\n[hls]\nflow_target=vivado\npackage.output.format=ip_catalog\npackage.output.syn=false\nclock=100MHz\nsyn.file=counter_top.cpp\ntb.file=counter_tb.cpp\nsyn.top=counter_module"
+   }
+  ],
+  "cwd": "/home/dan/HLS/IP_REPOSITORY/start_stop_counter"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Mar 11 10:28:08 2026",
+ "timestampMillis": "1773217688285",
+ "status": {
+  "cmdId": "fd4a7bdb-09e2-42a5-8d58-48e6bb17dd69",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Wed Mar 11 10:28:10 2026",
+ "timestampMillis": "1773217690693",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "counter_module",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/dan/HLS/IP_REPOSITORY/start_stop_counter/counter_top.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Mar 11 10:28:10 2026",
+ "timestampMillis": "1773217690694",
+ "buildStep": {
+  "cmdId": "fccca6dd-11e4-43fe-a591-78ff94d6bdf7",
+  "name": "",
+  "logFile": "/home/dan/HLS/IP_REPOSITORY/start_stop_counter/start_stop_counter/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/dan/HLS/IP_REPOSITORY/start_stop_counter"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Mar 11 10:28:10 2026",
+ "timestampMillis": "1773217690694",
+ "status": {
+  "cmdId": "fccca6dd-11e4-43fe-a591-78ff94d6bdf7",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Mar 11 10:28:10 2026",
+ "timestampMillis": "1773217690694",
+ "report": {
+  "path": "/home/dan/HLS/IP_REPOSITORY/start_stop_counter/start_stop_counter/hls/hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Mar 11 10:28:10 2026",
+ "timestampMillis": "1773217690694",
+ "report": {
+  "path": "/home/dan/HLS/IP_REPOSITORY/start_stop_counter/start_stop_counter/hls/syn/report/csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Mar 11 10:28:10 2026",
+ "timestampMillis": "1773217690694",
+ "report": {
+  "path": "/home/dan/HLS/IP_REPOSITORY/start_stop_counter/start_stop_counter/hls/syn/report/csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Mar 11 10:28:21 2026",
+ "timestampMillis": "1773217701630",
+ "report": {
+  "path": "/home/dan/HLS/IP_REPOSITORY/start_stop_counter/start_stop_counter/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Mar 11 10:28:21 2026",
+ "timestampMillis": "1773217701630",
+ "report": {
+  "path": "/home/dan/HLS/IP_REPOSITORY/start_stop_counter/start_stop_counter/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Mar 11 10:28:21 2026",
+ "timestampMillis": "1773217701630",
+ "report": {
+  "path": "/home/dan/HLS/IP_REPOSITORY/start_stop_counter/start_stop_counter/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Mar 11 10:28:21 2026",
+ "timestampMillis": "1773217701631",
+ "status": {
+  "cmdId": "fccca6dd-11e4-43fe-a591-78ff94d6bdf7",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Mar 11 10:28:21 2026",
+ "timestampMillis": "1773217701681",
+ "status": {
+  "cmdId": "fd4a7bdb-09e2-42a5-8d58-48e6bb17dd69",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Mar 11 10:28:21 2026",
+ "timestampMillis": "1773217701697",
+ "report": {
+  "path": "/home/dan/HLS/IP_REPOSITORY/start_stop_counter/start_stop_counter/reports/v++_compile_start_stop_counter_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Mar 11 10:28:21 2026",
+ "timestampMillis": "1773217701697",
+ "report": {
+  "path": "/home/dan/HLS/IP_REPOSITORY/start_stop_counter/start_stop_counter/reports/.db/v++_compile_start_stop_counter_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

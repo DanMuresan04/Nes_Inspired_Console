@@ -1,0 +1,20 @@
+{
+    "0": {
+        "name": "counter_module",
+        "file": "counter_top.cpp",
+        "fileloc": "49",
+        "instructions": "73",
+        "total_instructions": "73",
+        "calls": "",
+        "basicblocks": "17",
+        "memory_accesses": "24",
+        "control_depth": "6",
+        "def_use_depth": "4",
+        "loads": {
+            "G": "8"
+        },
+        "stores": {
+            "G": "12"
+        }
+    }
+}

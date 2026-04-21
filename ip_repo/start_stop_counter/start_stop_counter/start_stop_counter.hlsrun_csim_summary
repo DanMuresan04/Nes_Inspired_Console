@@ -1,0 +1,156 @@
+<ENTRY>
+{
+ "thisFile": "/home/dan/HLS/start_stop_counter/start_stop_counter/start_stop_counter.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Tue Mar 10 21:11:58 2026",
+ "timestampMillis": "1773169918507",
+ "buildStep": {
+  "cmdId": "56e181d7-6353-477d-8ac5-32d41c0dc902",
+  "name": "vitis-run",
+  "logFile": "/home/dan/HLS/start_stop_counter/start_stop_counter/logs/start_stop_counter.steps.log",
+  "commandLine": "/home/dan/Vivado/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run  --mode hls --csim --config /home/dan/HLS/start_stop_counter/hls_config.cfg --work_dir start_stop_counter ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "/home/dan/HLS/start_stop_counter/hls_config.cfg",
+   "--work_dir",
+   "start_stop_counter"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/dan/HLS/start_stop_counter"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Mar 10 21:11:58 2026",
+ "timestampMillis": "1773169918507",
+ "status": {
+  "cmdId": "56e181d7-6353-477d-8ac5-32d41c0dc902",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Tue Mar 10 21:12:00 2026",
+ "timestampMillis": "1773169920070",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/dan/HLS/start_stop_counter/counter_top.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Mar 10 21:12:00 2026",
+ "timestampMillis": "1773169920070",
+ "buildStep": {
+  "cmdId": "a8832374-de2d-4b2a-a2f2-4dd14597cb4f",
+  "name": "",
+  "logFile": "/home/dan/HLS/start_stop_counter/start_stop_counter/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/dan/HLS/start_stop_counter"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Mar 10 21:12:00 2026",
+ "timestampMillis": "1773169920070",
+ "status": {
+  "cmdId": "a8832374-de2d-4b2a-a2f2-4dd14597cb4f",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Mar 10 21:12:00 2026",
+ "timestampMillis": "1773169920872",
+ "status": {
+  "cmdId": "a8832374-de2d-4b2a-a2f2-4dd14597cb4f",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Mar 10 21:12:00 2026",
+ "timestampMillis": "1773169920910",
+ "status": {
+  "cmdId": "56e181d7-6353-477d-8ac5-32d41c0dc902",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Mar 10 21:12:00 2026",
+ "timestampMillis": "1773169920910",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Mar 10 21:12:00 2026",
+ "timestampMillis": "1773169920910",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

@@ -1,0 +1,117 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: counter_top.cpp, Line: 57, Column: 22 }
+Function:        _Z14counter_modulebb7ap_uintILi16EERS0_
+Args:            
+  - Callee:          'Debouncer::Debouncer()'
+    DebugLoc:        { File: counter_top.cpp, Line: 12, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'counter_module(bool, bool, ap_uint<16>, ap_uint<16>&)'
+    DebugLoc:        { File: counter_top.cpp, Line: 54, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: counter_top.cpp, Line: 59, Column: 25 }
+Function:        _Z14counter_modulebb7ap_uintILi16EERS0_
+Args:            
+  - Callee:          'EdgeDetector::EdgeDetector()'
+    DebugLoc:        { File: counter_top.cpp, Line: 37, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'counter_module(bool, bool, ap_uint<16>, ap_uint<16>&)'
+    DebugLoc:        { File: counter_top.cpp, Line: 54, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: counter_top.cpp, Line: 71, Column: 50 }
+Function:        _Z14counter_modulebb7ap_uintILi16EERS0_
+Args:            
+  - Callee:          'EdgeDetector::is_rising_edge(bool)'
+    DebugLoc:        { File: counter_top.cpp, Line: 39, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'counter_module(bool, bool, ap_uint<16>, ap_uint<16>&)'
+    DebugLoc:        { File: counter_top.cpp, Line: 54, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: counter_top.cpp, Line: 68, Column: 33 }
+Function:        _Z14counter_modulebb7ap_uintILi16EERS0_
+Args:            
+  - Callee:          'Debouncer::run(bool)'
+    DebugLoc:        { File: counter_top.cpp, Line: 18, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'counter_module(bool, bool, ap_uint<16>, ap_uint<16>&)'
+    DebugLoc:        { File: counter_top.cpp, Line: 54, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: counter_top.cpp, Line: 67, Column: 45 }
+Function:        _Z14counter_modulebb7ap_uintILi16EERS0_
+Args:            
+  - Callee:          'Debouncer::run(bool)'
+    DebugLoc:        { File: counter_top.cpp, Line: 18, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'counter_module(bool, bool, ap_uint<16>, ap_uint<16>&)'
+    DebugLoc:        { File: counter_top.cpp, Line: 54, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: counter_top.cpp, Line: 71, Column: 50 }
+Function:        _Z14counter_modulebb7ap_uintILi16EERS0_
+Args:            
+  - Callee:          'EdgeDetector::is_rising_edge(bool)'
+    DebugLoc:        { File: counter_top.cpp, Line: 39, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'counter_module(bool, bool, ap_uint<16>, ap_uint<16>&)'
+    DebugLoc:        { File: counter_top.cpp, Line: 54, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_counter_module_ir
+Args:            
+  - Callee:          'counter_module(bool, bool, ap_uint<16>, ap_uint<16>&)'
+    DebugLoc:        { File: counter_top.cpp, Line: 54, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_counter_module_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: counter_top.cpp, Line: 54, Column: 0 }
+Function:        _Z14counter_modulebb7ap_uintILi16EERS0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'Debouncer::run(bool)'
+    DebugLoc:        { File: counter_top.cpp, Line: 18, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'counter_module(bool, bool, ap_uint<16>, ap_uint<16>&)'
+    DebugLoc:        { File: counter_top.cpp, Line: 54, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: counter_top.cpp, Line: 54, Column: 0 }
+Function:        _Z14counter_modulebb7ap_uintILi16EERS0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'EdgeDetector::is_rising_edge(bool)'
+    DebugLoc:        { File: counter_top.cpp, Line: 39, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'counter_module(bool, bool, ap_uint<16>, ap_uint<16>&)'
+    DebugLoc:        { File: counter_top.cpp, Line: 54, Column: 0 }
+  - String:          ''''
+...

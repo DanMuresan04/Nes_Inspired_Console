@@ -1,0 +1,27 @@
+[
+  {
+    "directory": "/home/dan/HLS/IP_REPOSITORY/start_stop_counter",
+    "arguments": [
+      "/bin/clang++",
+      "--gcc-toolchain=/home/dan/Vivado/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
+      "-fhls",
+      "-hls-syn-headers-dir=/home/dan/Vivado/2025.2/Vitis/common/technology/autopilot",
+      "-fhlstoplevel=counter_module",
+      "-c",
+      "/home/dan/HLS/IP_REPOSITORY/start_stop_counter/counter_top.cpp"
+    ],
+    "file": "/home/dan/HLS/IP_REPOSITORY/start_stop_counter/counter_top.cpp"
+  },
+  {
+    "directory": "/home/dan/HLS/IP_REPOSITORY/start_stop_counter",
+    "arguments": [
+      "/bin/clang++",
+      "--gcc-toolchain=/home/dan/Vivado/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=/home/dan/Vivado/2025.2/Vitis/include",
+      "-c",
+      "/home/dan/HLS/IP_REPOSITORY/start_stop_counter/counter_tb.cpp"
+    ],
+    "file": "/home/dan/HLS/IP_REPOSITORY/start_stop_counter/counter_tb.cpp"
+  }
+]

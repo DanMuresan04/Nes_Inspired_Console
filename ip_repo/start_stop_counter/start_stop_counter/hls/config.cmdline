@@ -1,0 +1,3 @@
+relativeroot=/home/dan/HLS/IP_REPOSITORY/start_stop_counter
+original_argv=--mode hls --package --config /home/dan/HLS/IP_REPOSITORY/start_stop_counter/hls_config.cfg --work_dir start_stop_counter 
+

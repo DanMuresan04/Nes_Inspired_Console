@@ -1,0 +1,14 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="directive:1:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="counter_module" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=counter_module" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="counter_top.cpp:55:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="counter_module" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="counter_top.cpp:54:0" msg_body="Inlining function 'Debouncer::run(bool)' into 'counter_module(bool, bool, ap_uint&lt;16&gt;, ap_uint&lt;16&gt;&amp;)'">
+        <args Callee="Debouncer::run(bool)" Callee-DebugLoc="File counter_top.cpp Line 18 Column 0" Caller="counter_module(bool, bool, ap_uint&lt;16&gt;, ap_uint&lt;16&gt;&amp;)" Caller-DebugLoc="File counter_top.cpp Line 54 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="counter_top.cpp:54:0" msg_body="Inlining function 'EdgeDetector::is_rising_edge(bool)' into 'counter_module(bool, bool, ap_uint&lt;16&gt;, ap_uint&lt;16&gt;&amp;)'">
+        <args Callee="EdgeDetector::is_rising_edge(bool)" Callee-DebugLoc="File counter_top.cpp Line 39 Column 0" Caller="counter_module(bool, bool, ap_uint&lt;16&gt;, ap_uint&lt;16&gt;&amp;)" Caller-DebugLoc="File counter_top.cpp Line 54 Column 0"/>
+    </msg>
+</xilinx:hls_fe_msgs>

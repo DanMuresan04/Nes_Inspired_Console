@@ -1,0 +1,112 @@
+
+
+================================================================
+== Synthesis Summary Report of 'counter_module'
+================================================================
++ General Information: 
+    * Date:           Wed Mar 11 10:28:21 2026
+    * Version:        2025.2 (Build 6295257 on Nov 14 2025)
+    * Project:        start_stop_counter
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: artix7
+    * Target device:  xc7a100t-csg324-1
+    
+
+* Performance & Resource Estimates: 
++------------------+--------+---------------+----------+---------+------+----------+---------+--------+-------+------+----+-----------+-----------+-----+
+|      Modules     |  Issue |               | Iteration|         | Trip |          |      Latency     |       |      |    |           |           |     |
+|      & Loops     |  Type  | Violation Type|  Latency | Interval| Count| Pipelined| (cycles)|  (ns)  | Slack | BRAM | DSP|     FF    |    LUT    | URAM|
++------------------+--------+---------------+----------+---------+------+----------+---------+--------+-------+------+----+-----------+-----------+-----+
+|+ counter_module  |  Timing|              -|         -|        1|     -|       yes|        1|  10.000|  -0.52|     -|   -|  107 (~0%)|  370 (~0%)|    -|
++------------------+--------+---------------+----------+---------+------+----------+---------+--------+-------+------+----+-----------+-----------+-----+
+    Name Prefix: '+' for module, 'o' for loop, '*' for dataflow
+
+
+================================================================
+== HW Interfaces
+================================================================
+* Other Ports
++------------+---------+-----------+----------+
+| Port       | Mode    | Direction | Bitwidth |
++------------+---------+-----------+----------+
+| count_out  | ap_vld  | out       | 16       |
+| init       | ap_none | in        | 1        |
+| init_value | ap_none | in        | 16       |
+| start_stop | ap_none | in        | 1        |
++------------+---------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++------------+-----------+--------------+
+| Argument   | Direction | Datatype     |
++------------+-----------+--------------+
+| start_stop | in        | bool         |
+| init       | in        | bool         |
+| init_value | in        | ap_uint<16>  |
+| count_out  | out       | ap_uint<16>& |
++------------+-----------+--------------+
+
+* SW-to-HW Mapping
++------------+------------------+---------+
+| Argument   | HW Interface     | HW Type |
++------------+------------------+---------+
+| start_stop | start_stop       | port    |
+| init       | init             | port    |
+| init_value | init_value       | port    |
+| count_out  | count_out        | port    |
+| count_out  | count_out_ap_vld | port    |
++------------+------------------+---------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++-------------------------+-----+--------+-------------+-------+--------+---------+
+| Name                    | DSP | Pragma | Variable    | Op    | Impl   | Latency |
++-------------------------+-----+--------+-------------+-------+--------+---------+
+| + counter_module        | 0   |        |             |       |        |         |
+|   xor_ln19_fu_200_p2    |     |        | xor_ln19    | xor   | auto   | 0       |
+|   add_ln20_fu_210_p2    |     |        | add_ln20    | add   | fabric | 0       |
+|   icmp_ln21_fu_217_p2   |     |        | icmp_ln21   | seteq | auto   | 0       |
+|   xor_ln19_1_fu_239_p2  |     |        | xor_ln19_1  | xor   | auto   | 0       |
+|   xor_ln40_fu_248_p2    |     |        | xor_ln40    | xor   | auto   | 0       |
+|   rising_fu_254_p2      |     |        | rising      | and   | auto   | 0       |
+|   add_ln20_1_fu_281_p2  |     |        | add_ln20_1  | add   | fabric | 0       |
+|   icmp_ln21_1_fu_289_p2 |     |        | icmp_ln21_1 | seteq | auto   | 0       |
+|   xor_ln81_fu_312_p2    |     |        | xor_ln81    | xor   | auto   | 0       |
+|   icmp_ln86_fu_328_p2   |     |        | icmp_ln86   | seteq | auto   | 0       |
+|   icmp_ln86_1_fu_334_p2 |     |        | icmp_ln86_1 | setne | auto   | 0       |
+|   and_ln86_fu_340_p2    |     |        | and_ln86    | and   | auto   | 0       |
+|   add_ln90_fu_346_p2    |     |        | add_ln90    | add   | fabric | 0       |
+|   add_ln87_fu_353_p2    |     |        | add_ln87    | add   | fabric | 0       |
++-------------------------+-----+--------+-------------+-------+--------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++----------+---------+----------------------------------------+
+| Type     | Options | Location                               |
++----------+---------+----------------------------------------+
+| PIPELINE | ii=1    | in counter_module (counter_top.cpp:55) |
++----------+---------+----------------------------------------+
+
+

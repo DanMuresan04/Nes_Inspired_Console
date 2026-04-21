@@ -1,0 +1,30 @@
+
+
+set RtlHierarchyInfo {[
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "",
+		"CDFG" : "counter_module",
+		"Protocol" : "ap_ctrl_hs",
+		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
+		"Pipeline" : "Aligned", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
+		"II" : "1",
+		"VariableLatency" : "0", "ExactLatency" : "1", "EstimateLatencyMin" : "1", "EstimateLatencyMax" : "1",
+		"Combinational" : "0",
+		"Datapath" : "0",
+		"ClockEnable" : "0",
+		"HasSubDataflow" : "0",
+		"InDataflowNetwork" : "0",
+		"HasNonBlockingOperation" : "0",
+		"IsBlackBox" : "0",
+		"Port" : [
+			{"Name" : "start_stop", "Type" : "None", "Direction" : "I"},
+			{"Name" : "init", "Type" : "None", "Direction" : "I"},
+			{"Name" : "init_value", "Type" : "None", "Direction" : "I"},
+			{"Name" : "count_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "db_start_stop_inst_clean_state", "Type" : "OVld", "Direction" : "IO"},
+			{"Name" : "db_start_stop_inst_counter", "Type" : "OVld", "Direction" : "IO"},
+			{"Name" : "db_init_inst_clean_state", "Type" : "OVld", "Direction" : "IO"},
+			{"Name" : "edge_start_stop_inst", "Type" : "OVld", "Direction" : "IO"},
+			{"Name" : "db_init_inst_counter", "Type" : "OVld", "Direction" : "IO"},
+			{"Name" : "internal_count", "Type" : "OVld", "Direction" : "IO"},
+			{"Name" : "is_running", "Type" : "OVld", "Direction" : "IO"},
+			{"Name" : "fast_count", "Type" : "OVld", "Direction" : "IO"}]}]}

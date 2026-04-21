@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Wed Mar 11 10:29:57 2026
+# Process ID         : 152881
+# Current directory  : /home/dan/HLS/IP_REPOSITORY/start_stop_counter/start_stop_counter/hls/impl/ip
+# Command line       : vivado -notrace -mode batch -source run_ippack.tcl
+# Log file           : /home/dan/HLS/IP_REPOSITORY/start_stop_counter/start_stop_counter/hls/impl/ip/vivado.log
+# Journal file       : /home/dan/HLS/IP_REPOSITORY/start_stop_counter/start_stop_counter/hls/impl/ip/vivado.jou
+# Running On         : stampy
+# Platform           : cachyos
+# Operating System   : CachyOS
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i7-13620H
+# CPU Frequency      : 3284.786 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 16
+# Host memory        : 16361 MB
+# Swap memory        : 16360 MB
+# Total Virtual      : 32722 MB
+# Available Virtual  : 16101 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace

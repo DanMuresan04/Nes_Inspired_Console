@@ -1,0 +1,53 @@
+================================================================
+== Design Size Report
+================================================================
+
+* Total Instructions per Compilation Phase
++---------------+----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Phase         | Step                       | Instructions | Description                                                                            |
++---------------+----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Compile/Link  |                            | 635          | After all functions are compiled and linked into a single design                       |
+|               |                            |              |                                                                                        |
+| Unroll/Inline |                            |              | After user unroll and inline pragmas are applied                                       |
+|               | (1) unroll                 |  85          | user unroll pragmas are applied                                                        |
+|               | (2) simplification         |  74          | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                 |  68          | user inline pragmas are applied                                                        |
+|               | (4) simplification         |  68          | simplification of applied user inline pragmas                                          |
+|               |                            |              |                                                                                        |
+| Array/Struct  |                            |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
+|               | (1) array partition        |  72          | user array partition pragmas are applied                                               |
+|               | (2) simplification         |  68          | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate |  68          | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape          |  68          | apply array reshape pragmas                                                            |
+|               | (5) access patterns        |  68          | array access pattern optmizations                                                      |
+|               |                            |              |                                                                                        |
+| Performance   |                            |              | After transformations are applied to meet performance pragma targets                   |
+|               | (1) loop simplification    |  68          | loop and instruction simplification                                                    |
+|               | (2) parallelization        |  68          | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition        |  68          | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification         |  68          | simplification of design after performance transformations                             |
+|               |                            |              |                                                                                        |
+| HW Transforms |                            |              | After hardware transfomations                                                          |
+|               | (1) lowering               |  75          | initial conversion to HW specific instructions                                         |
+|               | (2) optimizations          |  77          | high level synthesis optimizations                                                     |
++---------------+----------------------------+--------------+----------------------------------------------------------------------------------------+
+
+* Instructions per Function for each Compilation Phase
++-------------------+--------------------+---------------+---------------+--------------+-------------+---------------+
+| Function          | Location           | Compile/Link  | Unroll/Inline | Array/Struct | Performance | HW Transforms |
++-------------------+--------------------+---------------+---------------+--------------+-------------+---------------+
+| + counter_module  | counter_top.cpp:49 | 635           | 68            | 68           | 68          | 77            |
+|    Debouncer      | counter_top.cpp:12 |  60 (2 calls) |               |              |             |               |
+|    EdgeDetector   | counter_top.cpp:37 |   3           |               |              |             |               |
+|    run            | counter_top.cpp:18 | 294 (2 calls) |               |              |             |               |
+|    is_rising_edge | counter_top.cpp:39 |  12           |               |              |             |               |
++-------------------+--------------------+---------------+---------------+--------------+-------------+---------------+
+
+* Design Size Message Settings
++---------------------------------------------+--------+------------------------------------------------------------------+
+| Message Setting                             | Value  | Description                                                      |
++---------------------------------------------+--------+------------------------------------------------------------------+
+| config_compile -design_size_maximum_warning | 100000 | Show a warning when total design instructions exceeds this value |
++---------------------------------------------+--------+------------------------------------------------------------------+
+
+
